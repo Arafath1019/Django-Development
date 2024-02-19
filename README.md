@@ -27,3 +27,13 @@ $ django-admin startproject project_name
 ```
 $ python3 manage.py runserver
 ```
+
+### File Structure of Django Project
+```
+1. Main Folder
+2. Project Folder
+3. App Folder
+4. Media Folder
+5. Template Folder
+6. Static Folder
+```
