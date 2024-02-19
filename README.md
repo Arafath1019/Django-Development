@@ -37,3 +37,9 @@ $ python3 manage.py runserver
 5. Template Folder
 6. Static Folder
 ```
+
+### Create Django App
+1. Create a django app
+```
+$ python3 manage.py startapp app_name
+```
