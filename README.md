@@ -17,3 +17,13 @@ $ pip3 install django
 $ django-admin
 ```
 6. VSCode Extensions: Django, Python
+
+### Create Project
+1. Creating Django Project
+```
+$ django-admin startproject project_name
+```
+2. Navigate to project directory & Run Django server
+```
+$ python3 manage.py runserver
+```
