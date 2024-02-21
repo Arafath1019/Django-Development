@@ -1,7 +1,10 @@
 from django.shortcuts import render, HttpResponse
 
 def home(request):
-    name = ['fahad', 'hossain', 'fahmida', 'farhana']
+    if request.method == 'GET':
+        name = ['fahad', 'hossain', 'fahmida', 'farhana']
+    else:
+        name = []
     context = {
         'name': name
     }
