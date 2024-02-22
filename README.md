@@ -58,3 +58,22 @@ $ python3 manage.py migrate
 ```
 $ python3 manage.py createsuperuser
 ```
+
+### Installing Django Crispy Forms
+1. Install Django Crispy Forms module
+```
+$ pip3 install django-crispy-forms
+$ pip3 install crispy-bootstrap5
+```
+2. Add crispy_forms to INSTALLED_APPS in settings.py file
+```
+INSTALLED_APPS = (
+    ...
+    "crispy_forms",
+    "crispy_bootstrap5",
+)
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+```
