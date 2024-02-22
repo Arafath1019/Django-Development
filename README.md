@@ -43,3 +43,18 @@ $ python3 manage.py runserver
 ```
 $ python3 manage.py startapp app_name
 ```
+
+### Database Migrations
+1. Make Migrations
+```
+$ python3 manage.py makemigrations
+```
+2. Migrate
+```
+$ python3 manage.py migrate
+```
+
+### Create Superuser
+```
+$ python3 manage.py createsuperuser
+```
