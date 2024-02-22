@@ -77,3 +77,9 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 ```
+
+### Setup Server Time Zone
+1. Update settings.py file
+```
+TIME_ZONE = 'Asia/Dhaka'
+```
