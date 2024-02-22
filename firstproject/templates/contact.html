@@ -1,10 +1,12 @@
 {% extends "basic.html" %} {% block body %}
+{% load crispy_forms_tags %}
 <h1>Contact Page</h1>
 
 <div class="container">
     <form method="post">
         {% csrf_token %}
-        {{form}}
+        {% comment %} {{form}} {% endcomment %}
+        {{form|crispy}}
         {% comment %} <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input
