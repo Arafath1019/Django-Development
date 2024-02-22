@@ -83,3 +83,24 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 ```
 TIME_ZONE = 'Asia/Dhaka'
 ```
+
+### Set MEDIA_ROOT & MEDIA_URL Key in settings.py
+1. Add this inside settings.py file
+```
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+```
+2. Add file restore in project urls.py
+```
+from django.conf.urls.static import static
+from django.conf import settings
+
+urlpatterns = [
+    ...
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+```
+
+### Install Pillow package
+```
+$ pip3 install Pillow
+```
