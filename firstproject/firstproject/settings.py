@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tuition',
     'crispy_forms',
     "crispy_bootstrap5",
+    "multiselectfield",
 ]
 
 MIDDLEWARE = [
