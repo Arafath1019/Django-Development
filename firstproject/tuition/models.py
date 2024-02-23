@@ -3,6 +3,7 @@ from django.utils.timezone import now
 from PIL import Image
 from django.utils.text import slugify
 from multiselectfield import MultiSelectField
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Contact(models.Model):
@@ -25,6 +26,10 @@ class Post(models.Model):
         ('Hindi', 'Hindi'),
         ('Arabic', 'Arabic')
     )
+    # OneToOne Relation
+    # user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    # OneToMany Relation
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True) 
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=101)
     slug = models.CharField(max_length=100, default=title)
