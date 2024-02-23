@@ -104,3 +104,16 @@ urlpatterns = [
 ```
 $ pip3 install Pillow
 ```
+
+### Install Django-multiselectfield package
+1. Install django-multiselectfield package
+```
+$ pip3 install django-multiselectfield
+```
+2. Add django-multiselectfield package to settings.py
+```
+INSTALLED_APPS = [
+    ...
+    "multiselectfield",
+]
+```
