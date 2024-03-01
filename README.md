@@ -117,3 +117,14 @@ INSTALLED_APPS = [
     "multiselectfield",
 ]
 ```
+
+### Django-admin shell (Python Interactive interpreter)
+```
+$ python3 manage.py shell
+```
+Uses of relative name
+```
+$ from tuition.models import Subject
+$ physics = Subject.objects.get(name='Physics')
+$ physics.subject_set.all()
+```
