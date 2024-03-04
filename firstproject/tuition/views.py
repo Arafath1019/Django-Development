@@ -19,7 +19,7 @@ class ContactView(View):
             form.save()
             return HttpResponse("Success")
         
-        return render(render, self.template_name, {"form": form})
+        return render(request, self.template_name, {"form": form})
 
 def contact(request):
     if request.method == 'POST':
